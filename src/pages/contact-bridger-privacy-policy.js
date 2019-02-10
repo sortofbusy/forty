@@ -17,7 +17,6 @@ const ContactBridgerPrivacyPolicy = (props) => (
                     <header className="major">
                         <h1>Contact Bridger Privacy Policy</h1>
                     </header>
-                    <span className="image col-6"><img src={feature_pic} alt="" /></span>
                     <p>This app allows you to access and update your Google Drive using your Google Account login, but does not transmit any data to the developer or any other party.</p>
                 </div>
             </section>
