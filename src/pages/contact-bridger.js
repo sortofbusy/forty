@@ -5,6 +5,10 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import pic1 from '../assets/images/cb-screenshots/ss1.png'
+import pic2 from '../assets/images/cb-screenshots/ss2.png'
+import pic3 from '../assets/images/cb-screenshots/ss3.png'
+
 const ContactBridger = (props) => (
     <Layout>
         <Helmet>
@@ -40,82 +44,86 @@ const ContactBridger = (props) => (
                     <p>Along the way, I learned a lot about the React Native ecosystem, integrating native Android modules, and the Google Play Store app 
                       release process.</p>
                     <h2>Features</h2>
-                    <div className="grid-wrapper" >
-                      <div className='col-4 feature-pic'>
-                      <Img fixed={props.data.ss1.childImageSharp.fixed} />
+                    <div id="gallery">
+                      <div className="grid-wrapper slide slide1" >
+                        <div className='col-4 feature-pic'>
+                        <Img fixed={props.data.ss1.childImageSharp.fixed} />
+                        </div>
+                        <div className='col-8 feature-text'>
+                          <p>This was my first project using React Native. The first challenge was working through the Google Signin flow to get authorization in the proper scopes,
+                            which meant getting very familiar with <a href='https://github.com/react-native-community/react-native-google-signin' target='_blank'>React Native Google Signin</a>,
+                            a package that's become a lot more stable since then.
+                          </p>
+                        </div>
+                        
                       </div>
-                      <div className='col-8 feature-text'>
-                        <p>This was my first project using React Native. The first challenge was working through the Google Signin flow to get authorization in the proper scopes,
-                           which meant getting very familiar with <a href='https://github.com/react-native-community/react-native-google-signin' target='_blank'>React Native Google Signin</a>,
-                          a package that's become a lot more stable since then.
-                        </p>
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-8 feature-text'>
+                          <p>Next, to choose a Sheet using the Google Drive picker interface, I wrote a native Android module that would emit the result to the React Native thread.
+                            There weren't any React Native packages for this at the time.
+                          </p>
+                        </div>
+                        <div className='col-4 feature-pic'>
+                          <Img fixed={props.data.ss2.childImageSharp.fixed} />
+                        </div>
                       </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-8 feature-text'>
-                        <p>Next, to choose a Sheet using the Google Drive picker interface, I wrote a native Android module that would emit the result to the React Native thread.
-                          There weren't any React Native packages for this at the time.
-                        </p>
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-4 feature-pic'>
+                        <Img fixed={props.data.ss3.childImageSharp.fixed} />
+                        </div>
+                        <div className='col-8 feature-text'>
+                          <p>Once a Google Sheet is selected, the app parses the column headers and suggests their correspondence to import fields.
+                          </p>
+                        </div>
                       </div>
-                      <div className='col-4 feature-pic'>
-                        <Img fixed={props.data.ss2.childImageSharp.fixed} />
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-8 feature-text'>
+                          <p>Once columns are defined, the data is viewed as cards representing contacts, and the user chooses which contacts to import.
+                          </p>
+                        </div>
+                        <div className='col-4 feature-pic'>
+                          <Img fixed={props.data.ss4.childImageSharp.fixed} />
+                        </div>
                       </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-4 feature-pic'>
-                      <Img fixed={props.data.ss3.childImageSharp.fixed} />
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-4 feature-pic'>
+                        <Img fixed={props.data.ss6.childImageSharp.fixed} />
+                        </div>
+                        <div className='col-8 feature-text'>
+                          <p>The imported contacts are then stored in a searchable list.
+                          </p>
+                        </div>
                       </div>
-                      <div className='col-8 feature-text'>
-                        <p>Once a Google Sheet is selected, the app parses the column headers and suggests their correspondence to import fields.
-                        </p>
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-8 feature-text'>
+                          <p>You can launch SMS or email intents for an individual contact.
+                          </p>
+                        </div>
+                        <div className='col-4 feature-pic'>
+                          <Img fixed={props.data.ss7.childImageSharp.fixed} />
+                        </div>
                       </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-8 feature-text'>
-                        <p>Once columns are defined, the data is viewed as cards representing contacts, and the user chooses which contacts to import.
-                        </p>
+                      <hr />
+                      <div className="grid-wrapper slide" >
+                        <div className='col-4 feature-pic'>
+                        <Img fixed={props.data.ss8.childImageSharp.fixed} />
+                        </div>
+                        <div className='col-8 feature-text'>
+                          <p>The contacts saved in the app can also be imported into Google Contacts.
+                          </p>
+                        </div>
                       </div>
-                      <div className='col-4 feature-pic'>
-                        <Img fixed={props.data.ss4.childImageSharp.fixed} />
-                      </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-4 feature-pic'>
-                      <Img fixed={props.data.ss6.childImageSharp.fixed} />
-                      </div>
-                      <div className='col-8 feature-text'>
-                        <p>The imported contacts are then stored in a searchable list.
-                        </p>
-                      </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-8 feature-text'>
-                        <p>You can launch SMS or email intents for an individual contact.
-                        </p>
-                      </div>
-                      <div className='col-4 feature-pic'>
-                        <Img fixed={props.data.ss7.childImageSharp.fixed} />
-                      </div>
-                    </div>
-                    <hr />
-                    <div className="grid-wrapper" >
-                      <div className='col-4 feature-pic'>
-                      <Img fixed={props.data.ss8.childImageSharp.fixed} />
-                      </div>
-                      <div className='col-8 feature-text'>
-                        <p>The contacts saved in the app can also be imported into Google Contacts.
-                        </p>
-                      </div>
-                    </div>
-                    <hr />
-                    <p>
-                      <Link to="/contact-bridger-privacy-policy" className="link primary">Privacy Policy</Link>
-                    </p>
+                      <hr />
+                  </div>
+                      <p>
+                        <Link to="/contact-bridger-privacy-policy" className="link primary">Privacy Policy</Link>
+                      </p>
+                  
                 </div>
             </section>
         </div>

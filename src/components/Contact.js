@@ -28,7 +28,7 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="#">info@sortofbusy.com</a>
+                        <a href="mailto:info@sortofbusy.com">info@sortofbusy.com</a>
                     </div>
                 </section>
             </section>
