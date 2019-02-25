@@ -57,6 +57,18 @@
   vertical-align: middle;
 }
 
+ul.horizontal-list {
+  display: inline;
+  padding-left: 0em;
+  li {
+    display: inline;
+    font-size: 1.1em;
+    padding-right: 1.2em;
+    color: bisque;
+    letter-spacing: 0.1em;
+  }
+}
+
 @include breakpoint(small) {
   #gallery-container {
     scroll-snap-type: y proximity;
