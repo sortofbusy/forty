@@ -12,27 +12,26 @@ import pic3 from '../assets/images/cb-screenshots/ss3.png'
 const ContactBridger = (props) => (
     <Layout>
         <Helmet>
-            <title>Contact Bridger</title>
+            <title>Josiah Vinson | Contact Bridger</title>
             <meta name="description" content="Contact Bridger" />
         </Helmet>
 
         <div id="main" className="alt">
             <section id="one">
-                <div className="inner">
+                <div className="inner" id="gallery-container">
                     <header className="major">
                         <h1>Contact Bridger</h1>
                     </header>
                     <p>
-                      <span className="image">
+                      <span className="image va-fix">
                         <a href='https://play.google.com/store/apps/details?id=com.sortofbusy.contactbridger&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
                           <img width="150" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
                         </a>
                       </span>
-                      <span className="image">
-                        <a style={{border: 'none'}} href='https://github.com/sortofbusy/contact-bridger' target="_blank">
-                          <Img fixed={props.data.github.childImageSharp.fixed} />
-                        </a>
-                      </span>
+                      <a href="https://github.com/sortofbusy/contact-bridger" target="blank" className="heading-link">
+                        View source on Github <span className="icon fa fa-external-link"></span>
+                      </a>
+                      
                     </p>
                     <p>I created this simple app in 2016 as I was learning about React Native to help me with the repetitive task of importing contacts from
                       a list of form respondents on a Google Sheet. The app allows you to quickly and easily import contact information from a Google Sheet 
@@ -51,8 +50,7 @@ const ContactBridger = (props) => (
                         </div>
                         <div className='col-8 feature-text'>
                           <p>This was my first project using React Native. The first challenge was working through the Google Signin flow to get authorization in the proper scopes,
-                            which meant getting very familiar with <a href='https://github.com/react-native-community/react-native-google-signin' target='_blank'>React Native Google Signin</a>,
-                            a package that's become a lot more stable since then.
+                            which meant getting very familiar with <a href='https://github.com/react-native-community/react-native-google-signin' target='_blank'>React Native Google Signin</a>.
                           </p>
                         </div>
                         
@@ -139,7 +137,7 @@ export default ContactBridger
 export const ssImage = graphql`
   fragment ssImage on File {
     childImageSharp {
-      fixed(width: 220) {
+      fixed(height: 275) {
          ...GatsbyImageSharpFixed
        }
      }
@@ -148,13 +146,6 @@ export const ssImage = graphql`
 
 export const query = graphql`
   query {
-    github: file(relativePath: { eq: "GitHub_Logo_White.png" }) {
-      childImageSharp {
-        fixed(width: 150) {
-           ...GatsbyImageSharpFixed
-         }
-       }
-    }
     ss1: file(relativePath: { eq: "cb-screenshots/ss1.png" }) {
       ...ssImage
     }

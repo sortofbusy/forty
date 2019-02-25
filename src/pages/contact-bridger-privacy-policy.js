@@ -7,7 +7,7 @@ import feature_pic from '../assets/images/feature.png'
 const ContactBridgerPrivacyPolicy = (props) => (
     <Layout>
         <Helmet>
-            <title>Contact Bridger Privacy Policy</title>
+            <title>Josiah Vinson | Contact Bridger Privacy Policy</title>
             <meta name="description" content="Contact Bridger Privacy Policy" />
         </Helmet>
 

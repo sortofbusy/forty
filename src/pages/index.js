@@ -17,7 +17,7 @@ class HomeIndex extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="sortofbusy.com"
+                    title="Josiah Vinson"
                     meta={[
                         { name: 'description', content: 'projects' },
                         { name: 'keywords', content: 'MEAN, React, React Native, serverless' },
@@ -39,36 +39,26 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
                                 <h3>Eat the Bible</h3>
-                                <p>Bible reading management site with highly customizable plans and note-taking capabilities</p>
+                                <p>Serverless Bible reading management site with highly customizable plans and note-taking capabilities</p>
                             </header>
                             <Link to="/eat-the-bible" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
-                                <h3>Magna</h3>
-                                <p>Lorem etiam nullam</p>
+                                <h3>Northwest Training</h3>
+                                <p>MEAN stack event registration and management site</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
+                                <h3>Quikitech.com <span className="icon fa fa-external-link"></span></h3>
+                                <p>Wordpress/WooCommerce</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <a href="https://quikitech.com" className="link primary"></a>
                         </article>
                     </section>
-                    <section id="two">
-                        <div className="inner">
-                            <header className="major">
-                                <h2>Massa libero</h2>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
-                            </ul>
-                        </div>
-                    </section>
+
                 </div>
 
             </Layout>
