@@ -19,8 +19,9 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="Josiah Vinson"
                     meta={[
-                        { name: 'description', content: 'projects' },
+                        { name: 'description', content: 'Side projects: MEAN, React, React Native, serverless' },
                         { name: 'keywords', content: 'MEAN, React, React Native, serverless' },
+                        { name: 'og:image', content: '//sortofbusy.com/static/pic02-9005fc20a9f9d43c3c3336226e1239d8.jpg'}
                     ]}
                 >
                 </Helmet>
