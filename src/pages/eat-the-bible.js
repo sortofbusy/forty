@@ -42,7 +42,7 @@ const EatTheBible = (props) => (
                       that things started to fall into place. I rewrote the entire application to work with Google Firebase's Realtime Database, hosted it on Firebase, and prepared
                       to use my new codebase to create React Native apps for the project (in progress). 
                     </p>
-                      <h2>Features</h2>
+                      <h2>Features <i style={{float: 'right', paddingTop: '.4em'}} className="fa fa-angle-double-right mobile-only"/></h2>
                     <div id="gallery">
                       <div className="grid-wrapper slide slide1" >
                         <div className='col-4 feature-pic'>

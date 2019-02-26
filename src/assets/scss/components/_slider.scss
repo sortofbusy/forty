@@ -57,6 +57,13 @@
   vertical-align: middle;
 }
 
+.mobile-only {
+  display: none;
+  @include breakpoint(small) {
+    display: inherit;
+  }
+}
+
 ul.horizontal-list {
   display: inline;
   padding-left: 0em;
@@ -80,6 +87,7 @@ ul.horizontal-list {
       -webkit-overflow-scrolling: touch;
       overflow-x: scroll;
       display: flex;
+      margin-bottom: 30px;
 
       .slide {
         scroll-snap-align: center;
@@ -88,7 +96,7 @@ ul.horizontal-list {
         justify-items: center;
         padding: 5 10 5 10px;
         overflow: visible;
-
+        margin-right: 10px;
       }
 
       .slide1 {

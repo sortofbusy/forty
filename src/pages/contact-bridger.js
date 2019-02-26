@@ -42,7 +42,7 @@ const ContactBridger = (props) => (
                     </p>
                     <p>Along the way, I learned a lot about the React Native ecosystem, integrating native Android modules, and the Google Play Store app 
                       release process.</p>
-                    <h2>Features</h2>
+                    <h2>Features <i style={{float: 'right', paddingTop: '.4em'}} className="fa fa-angle-double-right mobile-only"/></h2>
                     <div id="gallery">
                       <div className="grid-wrapper slide slide1" >
                         <div className='col-4 feature-pic'>

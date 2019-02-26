@@ -67,7 +67,7 @@ class HomeIndex extends React.Component {
                                 </p>
                                 <p>MEAN stack event registration and management site</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/northwest-training" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
